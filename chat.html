@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="chat-area">
+        <header>
+
+          <a href="users.php" class="back-icon"><i class="fas fa-arrow-left"></i></a>
+          <img src="php/images/<?php echo $row['img']; ?>" alt="">
+
+        </header>
+        <div class="chat-box">
+          <div class="chat outgoing">
+            <div class="details">
+              <p>im saicharan bagwan is my friend</p>
+
+            </div>
+            </div>
+            <div class="chat incomig">
+              <img src="" alt="">
+              <div class="details">
+                <p>bagwan is the topper of the class</p>
+              </div>
+
+            </div>
+        </div>
+        <form action="#" class="typing-area">
+          <input type="text" class="incoming_id" name="incoming_id" value="<?php echo $user_id; ?>" hidden>
+          <input type="text" name="message" class="input-field" placeholder="Type a message here..." autocomplete="off">
+          <button><i class="fab fa-telegram-plane"></i></button>
+        </form>
+      </section>
+    </div>
+
+  </body>
+</html>
